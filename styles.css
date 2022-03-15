@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bitter&family=Indie+Flower&family=Shadows+Into+Light&display=swap');
+
+@font-face {
+    font-family: thunder;
+    src: url('fonts/Thunder-VF.ttf');
+}
+
+
+body {
+    background-color: black;
+    overflow-x: hidden;
+}
+
+h1,h3,h4,p,a {
+    /*font-family: 'Noto Serif Display', serif;
+    font-family: 'Shadows Into Light', cursive;
+    font-family: 'Indie Flower', cursive; 
+    font-family: 'Bitter', serif; */
+    font-family: thunder;
+    color: white;
+}
+
+a {
+    font-size: 32px;
+}
+
+.card {
+    border: none;
+    
+}
+
+.responsive {
+    width: auto;
+    height: auto;
+    max-height: 700px;
+}
+
+.testo-principale {
+    font-size: 200px;
+}
+
+.hover-violet:hover {
+    color: violet;
+}
+
+h4 {
+    position: relative;
+    display: inline-block;
+    font-size: 2em;
+    color: violet;
+    font-weight: 800;
+    text-decoration: underline;
+    overflow: hidden;
+}
+
+  h4::before {
+    position: absolute;
+    content: attr(data-content); /* Prints the value of the attribute */
+    top: 0;
+    left: 0;
+    color: midnightblue;
+    text-decoration: underline;
+    overflow: hidden;
+    transition: width 275ms ease;
+    width: 0;
+    white-space: nowrap;
+  }
+
+  h4:hover::before {
+    width: 100%;
+  }
+
+#invia {
+    background-color: violet;
+}
+
+
+#invia:hover {
+    background-color: purple;
+    color: white;
+}
